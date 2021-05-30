@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLSinhVienModelStoreContainer" CdmEntityContainer="QLSinhVienCon">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="QLSinhVienModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiangViens">
+      <EntityTypeMapping TypeName="QLSinhVienModel.GiangVien">
+        <MappingFragment StoreEntitySet="GiangVien">
+          <ScalarProperty Name="MaGV" ColumnName="MaGV" />
+          <ScalarProperty Name="TenGV" ColumnName="TenGV" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HocKies">
+      <EntityTypeMapping TypeName="QLSinhVienModel.HocKy">
+        <MappingFragment StoreEntitySet="HocKy">
+          <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+          <ScalarProperty Name="HienThi" ColumnName="HienThi" />
+          <ScalarProperty Name="TGBatDau" ColumnName="TGBatDau" />
+          <ScalarProperty Name="TGKetThuc" ColumnName="TGKetThuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HocPhans">
+      <EntityTypeMapping TypeName="QLSinhVienModel.HocPhan">
+        <MappingFragment StoreEntitySet="HocPhan">
+          <ScalarProperty Name="MaHP" ColumnName="MaHP" />
+          <ScalarProperty Name="TenHP" ColumnName="TenHP" />
+          <ScalarProperty Name="SoTiet" ColumnName="SoTiet" />
+          <ScalarProperty Name="SoTC" ColumnName="SoTC" />
+          <ScalarProperty Name="HinhThucThi" ColumnName="HinhThucThi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KetQuaLopHPs">
+      <EntityTypeMapping TypeName="QLSinhVienModel.KetQuaLopHP">
+        <MappingFragment StoreEntitySet="KetQuaLopHP">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="MaLHP" ColumnName="MaLHP" />
+          <ScalarProperty Name="DiemCC" ColumnName="DiemCC" />
+          <ScalarProperty Name="DiemTX" ColumnName="DiemTX" />
+          <ScalarProperty Name="DiemThi" ColumnName="DiemThi" />
+          <ScalarProperty Name="DiemHe10" ColumnName="DiemHe10" />
+          <ScalarProperty Name="DiemHe4" ColumnName="DiemHe4" />
+          <ScalarProperty Name="DiemChu" ColumnName="DiemChu" />
+          <ScalarProperty Name="LanHocLai" ColumnName="LanHocLai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Khoas">
+      <EntityTypeMapping TypeName="QLSinhVienModel.Khoa">
+        <MappingFragment StoreEntitySet="Khoa">
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="TenKhoa" ColumnName="TenKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LopChuyenNganhs">
+      <EntityTypeMapping TypeName="QLSinhVienModel.LopChuyenNganh">
+        <MappingFragment StoreEntitySet="LopChuyenNganh">
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="TenLop" ColumnName="TenLop" />
+          <ScalarProperty Name="BatDau" ColumnName="BatDau" />
+          <ScalarProperty Name="KetThuc" ColumnName="KetThuc" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="SoSV" ColumnName="SoSV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LopHPs">
+      <EntityTypeMapping TypeName="QLSinhVienModel.LopHP">
+        <MappingFragment StoreEntitySet="LopHP">
+          <ScalarProperty Name="MaLHP" ColumnName="MaLHP" />
+          <ScalarProperty Name="PhongHoc" ColumnName="PhongHoc" />
+          <ScalarProperty Name="NgayThi" ColumnName="NgayThi" />
+          <ScalarProperty Name="TongSoSV" ColumnName="TongSoSV" />
+          <ScalarProperty Name="MaHP" ColumnName="MaHP" />
+          <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+          <ScalarProperty Name="MaGV" ColumnName="MaGV" />
+          <ScalarProperty Name="TenLHP" ColumnName="TenLHP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="QLSinhVienModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="STCD" ColumnName="STCD" />
+          <ScalarProperty Name="STCDKy" ColumnName="STCDKy" />
+          <ScalarProperty Name="Avt" ColumnName="Avt" />
+          <ScalarProperty Name="DiemTichLuy" ColumnName="DiemTichLuy" />
+          <ScalarProperty Name="MaLop" ColumnName="MaLop" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="QLSinhVienModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TongKetKies">
+      <EntityTypeMapping TypeName="QLSinhVienModel.TongKetKy">
+        <MappingFragment StoreEntitySet="TongKetKy">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="MaHK" ColumnName="MaHK" />
+          <ScalarProperty Name="DiemTBC" ColumnName="DiemTBC" />
+          <ScalarProperty Name="STCDKy" ColumnName="STCDKy" />
+          <ScalarProperty Name="STCD" ColumnName="STCD" />
+          <ScalarProperty Name="XepLoai" ColumnName="XepLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="QLSinhVienModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="QLSinhVienModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="QLSinhVienModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="QLSinhVienModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="QLSinhVienModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="QLSinhVienModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="QLSinhVienModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="sp_xoaGV" FunctionName="QLSinhVienModel.Store.sp_xoaGV" />
+    <FunctionImportMapping FunctionImportName="sp_xoaK" FunctionName="QLSinhVienModel.Store.sp_xoaK" />
+    <FunctionImportMapping FunctionImportName="sp_xoaSV" FunctionName="QLSinhVienModel.Store.sp_xoaSV" />
+    <FunctionImportMapping FunctionImportName="themKQLHP" FunctionName="QLSinhVienModel.Store.themKQLHP" />
+    <FunctionImportMapping FunctionImportName="xemDSGV" FunctionName="QLSinhVienModel.Store.xemDSGV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSGV_Result">
+          <ScalarProperty Name="Mã_giảng_viên" ColumnName="Mã giảng viên" />
+          <ScalarProperty Name="Tên_giảng_viên" ColumnName="Tên giảng viên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="SĐT" ColumnName="SĐT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Khoa" ColumnName="Khoa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSHP" FunctionName="QLSinhVienModel.Store.xemDSHP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSHP_Result">
+          <ScalarProperty Name="Mã_học_phần" ColumnName="Mã học phần" />
+          <ScalarProperty Name="Tên_học_phần" ColumnName="Tên học phần" />
+          <ScalarProperty Name="Số_tiết_học" ColumnName="Số tiết học" />
+          <ScalarProperty Name="Số_tín_chỉ" ColumnName="Số tín chỉ" />
+          <ScalarProperty Name="Hình_thức_thi" ColumnName="Hình thức thi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSK" FunctionName="QLSinhVienModel.Store.xemDSK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSK_Result">
+          <ScalarProperty Name="Mã_khoa" ColumnName="Mã khoa" />
+          <ScalarProperty Name="Tên_khoa" ColumnName="Tên khoa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSLCN" FunctionName="QLSinhVienModel.Store.xemDSLCN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSLCN_Result">
+          <ScalarProperty Name="Mã_lớp" ColumnName="Mã lớp" />
+          <ScalarProperty Name="Tên_lớp" ColumnName="Tên lớp" />
+          <ScalarProperty Name="khoa" ColumnName="khoa" />
+          <ScalarProperty Name="Số_sinh_viên" ColumnName="Số sinh viên" />
+          <ScalarProperty Name="Niên_khóa" ColumnName="Niên khóa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSLHP" FunctionName="QLSinhVienModel.Store.xemDSLHP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSLHP_Result">
+          <ScalarProperty Name="Mã_học_phần" ColumnName="Mã học phần" />
+          <ScalarProperty Name="Tên" ColumnName="Tên" />
+          <ScalarProperty Name="Số_sinh_viên" ColumnName="Số sinh viên" />
+          <ScalarProperty Name="Ngày_thi" ColumnName="Ngày thi" />
+          <ScalarProperty Name="Giảng_đường" ColumnName="Giảng đường" />
+          <ScalarProperty Name="Học_phần" ColumnName="Học phần" />
+          <ScalarProperty Name="Học_kì" ColumnName="Học kì" />
+          <ScalarProperty Name="Giảng_viên" ColumnName="Giảng viên" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSSVLHP" FunctionName="QLSinhVienModel.Store.xemDSSVLHP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSSVLHP_Result">
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Lớp" ColumnName="Lớp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xoaHP" FunctionName="QLSinhVienModel.Store.xoaHP" />
+    <FunctionImportMapping FunctionImportName="xoaKQLHP" FunctionName="QLSinhVienModel.Store.xoaKQLHP" />
+    <FunctionImportMapping FunctionImportName="xoaLCN" FunctionName="QLSinhVienModel.Store.xoaLCN" />
+    <FunctionImportMapping FunctionImportName="xoaLHP" FunctionName="QLSinhVienModel.Store.xoaLHP" />
+    <FunctionImportMapping FunctionImportName="xemDSSVLHPTheoTen" FunctionName="QLSinhVienModel.Store.xemDSSVLHPTheoTen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSSVLHPTheoTen_Result">
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Lớp" ColumnName="Lớp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSDiemSV" FunctionName="QLSinhVienModel.Store.xemDSDiemSV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSDiemSV_Result">
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="họ_tên" ColumnName="họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Điểm_CC" ColumnName="Điểm CC" />
+          <ScalarProperty Name="Điểm_TX" ColumnName="Điểm TX" />
+          <ScalarProperty Name="Điểm_thi" ColumnName="Điểm thi" />
+          <ScalarProperty Name="Hệ_10" ColumnName="Hệ 10" />
+          <ScalarProperty Name="Hệ_4" ColumnName="Hệ 4" />
+          <ScalarProperty Name="Điểm_chữ" ColumnName="Điểm chữ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="xemDSDiemSVTheoTen" FunctionName="QLSinhVienModel.Store.xemDSDiemSVTheoTen">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSDiemSVTheoTen_Result">
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="họ_tên" ColumnName="họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Điểm_CC" ColumnName="Điểm CC" />
+          <ScalarProperty Name="Điểm_TX" ColumnName="Điểm TX" />
+          <ScalarProperty Name="Điểm_thi" ColumnName="Điểm thi" />
+          <ScalarProperty Name="Hệ_10" ColumnName="Hệ 10" />
+          <ScalarProperty Name="Hệ_4" ColumnName="Hệ 4" />
+          <ScalarProperty Name="Điểm_chữ" ColumnName="Điểm chữ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="suaKQLHP" FunctionName="QLSinhVienModel.Store.suaKQLHP" />
+    <FunctionImportMapping FunctionImportName="xemDSSV" FunctionName="QLSinhVienModel.Store.xemDSSV">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemDSSV_Result">
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="Tên_sinh_viên" ColumnName="Tên sinh viên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="Lớp" ColumnName="Lớp" />
+          <ScalarProperty Name="SĐT" ColumnName="SĐT" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Địa_chỉ" ColumnName="Địa chỉ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="capnhatdiemvasotinchi" FunctionName="QLSinhVienModel.Store.capnhatdiemvasotinchi" />
+    <FunctionImportMapping FunctionImportName="xemKQHT" FunctionName="QLSinhVienModel.Store.xemKQHT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="QLSinhVienModel.xemKQHT_Result">
+          <ScalarProperty Name="Xếp_Hạng" ColumnName="Xếp Hạng" />
+          <ScalarProperty Name="Mã_sinh_viên" ColumnName="Mã sinh viên" />
+          <ScalarProperty Name="Họ_tên" ColumnName="Họ tên" />
+          <ScalarProperty Name="Ngày_sinh" ColumnName="Ngày sinh" />
+          <ScalarProperty Name="Giới_tính" ColumnName="Giới tính" />
+          <ScalarProperty Name="STCĐK" ColumnName="STCĐK" />
+          <ScalarProperty Name="STC_đạt" ColumnName="STC đạt" />
+          <ScalarProperty Name="Điểm_TB" ColumnName="Điểm TB" />
+          <ScalarProperty Name="Xếp_loại" ColumnName="Xếp loại" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
